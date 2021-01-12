@@ -1,0 +1,245 @@
+html,
+body {
+  padding: 0;
+  margin: 15px 0;
+}
+.container {
+  width: 50%;
+  margin-left: 25%;
+  border: black solid 1px;
+}
+#bloc {
+  display: flex;
+}
+#cv {
+  width: 80%;
+}
+
+/* Form Aside */
+
+#bloc > aside {
+  background-color: #f47001;
+  width: 30%;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+#moi {
+  margin: 30px 0;
+}
+#moi > div:first-child {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+#moi > div:first-child > img {
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 150px;
+  height: 140px;
+  margin: 0;
+}
+.prog {
+  margin-left: 40px;
+}
+.prog > h2 {
+  font-size: 1rem;
+  color: #ffffff;
+  letter-spacing: 0.1rem;
+  font-family: "Open Sans Condensed", roboto, sans-serif;
+  margin: 0;
+}
+.prog > hr {
+  width: 37px;
+  margin: 3px 0 0 0;
+  background-color: #ffffff;
+  height: 2px;
+  border: none;
+}
+.prog > ul {
+  padding: 0 0 0 15px;
+}
+.liste {
+  list-style-type: none;
+  font-family: "Heebo", sans-serif;
+  font-weight: 700;
+}
+.liste > h4 {
+  margin: 0;
+}
+.liste > span {
+  color: #ffffff;
+  font-weight: 400;
+}
+.site {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: #ffffff;
+}
+.site > h4 {
+  font-weight: 400;
+  margin: 20px 0 0 15px;
+}
+.site > i {
+  margin: 20px 0 0 0;
+  font-size: 1.3rem;
+}
+.far.fa-circle {
+  color: #fead6e;
+}
+.fas.fa-circle {
+  color: #ffffff;
+  border-color: #f47001;
+}
+
+/* Form Header*/
+
+#cv > header {
+  margin-left: 4%;
+  height: 8%;
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+}
+#header {
+  text-align: end;
+  width: 100%;
+}
+#header > h1 {
+  font-weight: 300;
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+#header > h3 {
+  font-weight: 400;
+  margin-top: 0;
+}
+#header > h3 > span {
+  font-weight: 400;
+  margin-top: 0;
+  color: #f47001;
+  text-align: end;
+}
+#header > div {
+  width: 90%;
+  margin-left: 10%;
+}
+#header > div > hr {
+  height: 2px;
+  border: none;
+  background-color: black;
+}
+#header > ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: center;
+  padding: 0;
+  margin-top: 30px;
+  width: 120%;
+}
+.profile {
+  margin-right: 10px;
+  padding-right: 10px;
+}
+.profile > span {
+  font-weight: 700;
+}
+.border {
+  border-right: solid 1px;
+}
+#link {
+  display: flex;
+  flex-direction: column;
+}
+#link > a {
+  font-size: 1.5rem;
+  color: #f47001;
+  border: solid 1px black;
+  box-shadow: #e0cfc2 3px 3px 3px;
+  padding: 8px 8px 5px 8px;
+}
+#link > a:first-child {
+  margin: 40px 0 15px 30px;
+}
+#link > a:nth-child(2) {
+  margin: 0 0 0 30px;
+}
+
+/* Form CV*/
+
+#competence {
+  margin-top: 100px;
+}
+.titre {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #f47001;
+  margin: 0;
+}
+.fin {
+  width: 95%;
+  margin: 8% 0 0 2.5%;
+  background-color: black;
+  border: none;
+  height: 2px;
+}
+.sous-titre {
+  width: 37px;
+  background-color: black;
+  height: 2px;
+  border: none;
+  margin-top: 3px;
+}
+#liste-competence {
+  padding: 0;
+  margin-left: 55px;
+}
+#liste-competence > li {
+  padding-left: 5px;
+  margin-bottom: 10px;
+}
+.liste-cv {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 42px;
+}
+.liste-cv > li {
+  display: flex;
+  flex-direction: row;
+}
+.date {
+  width: 20%;
+  padding-top: 16px;
+}
+.lieu {
+  width: 507px;
+  text-align: justify;
+  margin: 15px 0;
+}
+.lieu > p {
+  margin: 5px 0 0 0;
+}
+#mention {
+  color: #f47001;
+}
+#formation,
+#experience {
+  margin-top: 50px;
+}
+
+#loisir {
+  margin-top: 20px;
+}
+
+#loisir > div {
+  display: flex;
+  justify-content: space-around;
+}
+#loisir > div > i {
+  font-size: 250%;
+  margin-top: 20px;
+}
