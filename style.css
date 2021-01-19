@@ -447,3 +447,14 @@ body {
     width: 115%;
   }
 }
+@media screen and (max-width: 1320px) and (min-width: 1024px) {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    margin: 15px 25px;
+    width: 95%;
+  }
+}
