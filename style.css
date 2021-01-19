@@ -99,6 +99,9 @@ body {
 .fas.fa-circle {
   color: #ffffff;
 }
+.fas.fa-circle:hover {
+  color: #005c96;
+}
 
 /* Form Header*/
 
@@ -128,7 +131,9 @@ body {
   text-align: end;
   font-family: "Open Sans Condensed", roboto, sans-serif;
 }
-
+#header > h3 > span:hover {
+  color: #005c96;
+}
 #header > div > hr {
   width: 115%;
   margin-left: 2.5%;
@@ -169,6 +174,9 @@ body {
   box-shadow: #e0cfc2 3px 3px 3px;
   padding: 8px 10px 5px 10px;
   margin-right: 20px;
+}
+#link > a:hover {
+  color: #005c96;
 }
 
 /* Form CV*/
@@ -288,5 +296,154 @@ body {
   }
   100% {
     transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+/* Responsive */
+
+@media screen and (max-width: 400px) {
+  body,
+  html {
+    margin: 0;
+  }
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+  #bloc {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #bloc > aside {
+    width: 100%;
+  }
+  #cv {
+    width: 100%;
+  }
+  #cv > header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #header > ul {
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+  }
+  .profile {
+    margin: 0;
+    padding: 0;
+  }
+  .border {
+    border-right: none;
+  }
+  #header > div > hr {
+    width: 50%;
+    margin: 0 0 15px 80px;
+  }
+  #link {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 80px;
+  }
+  #link > a:nth-child(2) {
+    margin: 0;
+  }
+  #competence,
+  #formation,
+  #experience {
+    margin-top: 20px;
+  }
+  #loisir {
+    margin: 20px 0 50px 0;
+  }
+  #liste-competence {
+    list-style-type: none;
+    text-align: center;
+    margin-left: 0;
+  }
+  #liste-competence > li {
+    font-size: 0.9rem;
+  }
+  .fin {
+    width: 50%;
+    margin: 0 0 15px 80px;
+  }
+  .liste-cv {
+    margin-left: 0;
+    text-align: center;
+  }
+  .liste-cv > li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .date {
+    width: 100%;
+    text-align: center;
+  }
+  .lieu {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 401px) {
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    width: 99%;
+    margin: 3px;
+  }
+  #bloc {
+    flex-direction: column-reverse;
+  }
+  #cv {
+    width: 100%;
+  }
+  #header > ul {
+    margin-left: 0;
+  }
+  #loisir {
+    margin-bottom: 30px;
+  }
+  #bloc > aside {
+    width: 100%;
+  }
+  .prog {
+    margin-left: 180px;
+    font-size: 1.5rem;
+  }
+  .prog > h2 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 800px) {
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    width: 99%;
+    margin: 3px;
+  }
+  #header > ul {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1780px) and (min-width: 1320px) {
+  .container {
+    width: auto;
+    margin: 0 18%;
+  }
+  #header > ul {
+    max-width: 110%;
+  }
+  #header > div > hr {
+    width: 115%;
   }
 }
