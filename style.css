@@ -458,3 +458,28 @@ body {
     width: 95%;
   }
 }
+@media screen and (max-width: 828px) and (min-width: 801px) {
+  #bloc {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  #cv {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  #bloc > aside {
+    width: 100%;
+  }
+  #moi > div:first-child > img {
+    width: 200px;
+    height: 190px;
+  }
+  .prog {
+    margin-left: 60px;
+    font-size: 2rem;
+  }
+  .prog > h2 {
+    font-size: 3rem;
+  }
+}
